@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.banner{
+    margin-top: 100px;
+    width: 90%;
+    height: 200px;
+    background-image: url(img/lineart-urs-building.png);
+    background-size: 75%;
+    background-position: 60%;
+    display: flex;
+    justify-self: center;
+    border-radius: 2.5rem;
+}
+
+.cover-banner{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: Volkhov;
+    text-align: center;
+}
+
+.card-container{
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 25px;
+}
+
+.prog-page{
+    width: 92%;
+    justify-self: center;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 50px;
+}
+
+a{
+    color: #0e0e0e;
+}
+
+
+
+.abt-cos-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.cards{
+    width: 50%;
+    padding: 30px;
+    border-radius: 1.5rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #2c5a8f;
+    color: whitesmoke;
+    gap: 20px;
+}
+
+.cards h1{
+    font-family: Volkhov;
+    font-size: max(30px, 45px);
+}
+
+.cards ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: circle;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1150px) {
+    .cover-banner{
+        font-size: 5rem;
+    }
+
+    .who-we-are{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .who-content{
+        width: 98%;
+        height: 100%;
+        border-radius: 15px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0e0e0e;
+        gap: 90px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .who-content h1{
+        width: 30%;
+        font-family: Volkhov;
+        font-size: 56px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .who-content div{
+        width: 50%;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .who-content span{
+        color: #2986fe;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cover-banner{
+        font-size: 3rem;
+    }
+
+
+    .who-we-are{
+        height: max-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .who-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 98%;
+        background-color: whitesmoke;
+        padding: 30px;
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .who-content h1{
+        font-family: Volkhov;
+        font-size: 45px;
+        font-weight: 600;
+        text-align: center;
+
+    }
+
+    .who-content div{
+        font-size: 18px;
+    }
+
+
+
+    .who-content span{
+        color: #2986fe;
+    }
+    
+
+    .abt-cos-cards{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .cards{
+        width: 92%;
+    }
+}
+

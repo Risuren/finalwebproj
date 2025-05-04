@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* DESKTOP */
+@media screen and (min-width:1150px) {
+    section{
+        margin-bottom: 4rem;
+    }
+
+    .container{
+        width: 92%;
+        justify-self: center;
+        /* border: 2px solid red; */
+    }
+
+    .aboutus{
+        width: 100%;
+        height: 85vh;
+        background-image: url(img/cos-building.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cover{
+        width: 100%;
+        height: 100%;
+        background-color: #000000a4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        font-family: Volkhov;
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    .cover div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        margin-top: 0px;
+    }
+
+    .urs:hover{
+        color: #2986fe;
+        font-size: 7.5rem;
+    }
+
+    .cover span{
+        margin-top: 12%;
+        font-size: 1.5rem;
+        font-family: Inter;
+        font-weight: 500;
+    }
+
+    .who-we-are{
+        height: 300px;
+        width: 100%;
+    }
+
+    .who-content{
+        width: 98%;
+        height: 100%;
+        border-radius: 15px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0e0e0e;
+        gap: 90px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .who-content h1{
+        width: 30%;
+        font-family: Volkhov;
+        font-size: 56px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .who-content div{
+        width: 50%;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .who-content span{
+        color: #2986fe;
+    }
+
+    section.history{
+        margin-bottom: 20px;
+    }
+
+    .history{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .history h1{
+        justify-self: center;
+        font-family: Volkhov;
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .history-container{
+        width: 99%;
+        background-color: #0e0e0e;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .year-ribbon{
+        display: flex;
+        color: whitesmoke;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 30px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .year-ribbon i{
+        color: #2986fe;
+        font-size: 25px;
+    }
+
+    .history-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .history-img{
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+        margin-bottom: 40px;
+        background-size: cover;
+    }
+
+    .history-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .history-text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        color: #fff;
+    }
+
+    .history-text h1{
+        font-size: 48px;
+    }
+
+    .next{
+        display: flex;
+        justify-self: center;
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: #294a70;
+    }
+
+    .vmcq{
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container{
+        perspective: 1000px;
+    }
+
+    .card{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        border-radius: 10px;
+    }
+    
+    .front, .back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        backface-visibility: hidden;
+    }
+
+    .front{
+        background-color: #0a4a9c;
+        background-image: url(img/lineart-urs-building.png);
+        background-size: 160%;
+        background-position: 10%;
+        opacity: 90%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        transform: rotateY(0deg);
+        font-family: Volkhov;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .front h1{
+        font-weight: 200;
+        padding: 20px;
+    }
+
+    .back{
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0e0e0e;
+        transform: rotateY(180deg);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-container:hover .card{
+        transform: rotateY(180deg);
+    }
+
+    hr{
+        justify-self: center;
+        margin-top: 50px;
+        width: 95%;
+        height: 5px;
+        border: none;
+        background-color: #0a4a9c;
+    }
+
+
+    
+
+}
+
+/* MOBILE */
+@media screen and (max-width:1150px) {
+
+    section{
+        margin-bottom: 4rem;
+    }
+
+    .container{
+        width: 92%;
+        justify-self: center;
+        /* border: 2px red; */
+    }
+
+    hr{
+        justify-self: center;
+        border: none;
+        width: 92%;
+        height: 15px;
+        background-color: #2986fe;
+        margin-bottom: 20px;
+    }
+
+    .aboutus{
+        width: 92%;
+        height: 50vh;
+        background-image: url(img/cos-building.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-self: center;
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .cover{
+        width: 100%;
+        height: 100%;
+        background-color: #000000a4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        display: flex;
+        text-align: center;
+        text-wrap: wrap;
+    }
+
+    .cover div{
+        font-family: Volkhov;
+        font-weight: 600;
+        font-size: 3.5em;
+        color: #e6f1ff;
+        text-align: center;
+    }
+
+    .cover div span{
+        font-size: 1.5rem;
+        font-family: Inter;
+        font-weight: 500;
+    }
+
+    .who-we-are{
+        height: 420px;
+        background-color: #294a70;
+    }
+
+    .who-content{
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .who-content h1{
+        font-weight: 100;
+        margin-top: 30px;
+        font-family: Volkhov;
+        font-size: 38px;
+    }
+
+
+    section.history{
+        margin-bottom: 10px;
+    }
+
+
+    .history h1{
+        justify-self: center;
+        font-family: Volkhov;
+        font-size: 60px;
+        font-weight: 1000;
+        margin-bottom: 20px;
+    }
+
+    .history-container{
+        width: 100%;
+        background-color: #0e0e0e;
+        color: #fff;
+        height: max-content;
+    }
+
+    .year-ribbon{
+        display: flex;
+        color: whitesmoke;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 30px 0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .year-ribbon i{
+        color: #2986fe;
+        font-size: 25px;
+    }
+
+    .history-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .history-img{
+        width: 90%;
+        height: 300px;
+        background-color: grey;
+        margin-bottom: 30px;
+    }
+
+    .history-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .history-text h1{
+        font-size: 32px;
+        font-weight: 800;
+        color: #2986fe;
+    }
+
+    .history-text div{
+        font-size: 18px;
+        padding: 0 10px;
+        margin-bottom: 50px;
+    }
+
+    .next{
+        display: flex;
+        justify-self: center;
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: #294a70;
+    }
+
+    .vmcq{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container{
+        perspective: 1000px;
+        
+    }
+
+    .card{
+        position: relative;
+        width: 400px;
+        height: 200px;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+    }
+    
+    .front, .back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        backface-visibility: hidden;
+    }
+
+    .front{
+        background-color: #0a4a9c;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateX(0deg);
+        font-family: Volkhov;
+        font-size: 45px;
+        text-align: center;
+        background-image: url(img/lineart-urs-building.png);
+        background-size: 160%;
+        background-position: 10%;
+        opacity: 90%;
+        color: #000000;
+    }
+
+    .front h1{
+        font-weight: 200;
+        padding: 20px;
+    }
+
+    .back{
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0e0e0e;
+        transform: rotateX(180deg);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-container:hover .card{
+        transform: rotateX(180deg);
+    }
+
+
+
+
+    /* .history{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .history h1{
+        font-family: Josefin Sans;
+        font-weight: bolder;
+        font-size: 38px;
+    }
+
+    .history div{
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    .history .two-column{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .history-img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .history-img img{
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    } */
+
+    
+}
+
+

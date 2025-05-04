@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ========BASE======== */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Work Sans;
+    background-color: #FFFFFF;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ========REUSABLE======== */
+.container{
+    max-width: 1200px;
+    margin-inline: 2rem;
+}
+
+/* ========HEADER AND NAV======== */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #294a70;
+    z-index: 100;
+}
+
+nav{
+    position: relative;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo{
+    color: whitesmoke;
+}
+
+.nav_close, .nav_toggle{
+    display: flex;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* mobile device */
+@media screen and (max-width: 1150px) {
+    .nav{
+        height: 5rem;
+    }
+
+    .nav_menu{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background-color: #294a70;
+        width: 100%;
+        height: 100%;
+        padding: 6rem 3.5rem 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: left 0.4s;
+    }
+
+    .nav_item{
+        transform: translateX(-150px);
+        visibility: hidden;
+        transition: transform .4s ease-out, visibility .4s;
+    }
+
+    .nav_item:nth-child(1){
+        transition-delay: .1s;
+    }
+    .nav_item:nth-child(2){
+        transition-delay: .2s;
+    }
+    .nav_item:nth-child(3){
+        transition-delay: .3s;
+    }
+    .nav_item:nth-child(4){
+        transition-delay: .4s;
+    }
+    .nav_item:nth-child(5){
+        transition-delay: .5s;
+    }
+    .nav_item:nth-child(6){
+        transition-delay: .6s;
+    }
+}
+
+.nav_list{
+    display: flex;
+}
+
+.nav_list{
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.nav_link{
+    position: relative;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.4s;
+}
+
+.nav_link span{
+    position: relative;
+    transition: margin .4s;
+}
+
+.nav_link span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: width .4s ease-out;
+}
+
+/* Animation link on hover */
+.nav_link:hover span::after{
+    width: 100%;
+}
+
+/* Sibling fade animation */
+.nav_list:has(.nav_link:hover) .nav_link:not(:hover){
+    opacity: .4;
+}
+
+.nav_close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Show menu */
+.show-menu {
+    left: 0;
+  }
+
+  /* Animation link when displaying menu */
+.show-menu .nav_item {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+
+  /* ======= BREAKPOINTS =======*/
+@media screen and (min-width: 1150px) {
+    .container{
+        margin-inline: auto;
+    }
+
+    .nav{
+        height: 6rem;
+    }
+
+    .nav_toggle, .nav_close{
+        display: none;
+    }
+
+    .nav_link{
+        font-size: 18px;
+    }
+
+    .nav_list{
+        flex-direction: row;
+        column-gap: 1.2rem;
+    }
+}
+
+/* ======= MAIN CONTENT =======*/
+
+/* Slider */
+.hero{
+    margin-top: 5rem;
+    max-width: 100vw;
+}
+
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+.list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-text{
+    z-index: 100;
+}
+
+.buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #FFFFFF;
+    border: none;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #FFFFFF;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.dots li.active{
+    width: 30px;
+}
+
+/* WELCOME SECTION */
+.welcome{
+    max-width: 1400px;
+    margin-inline: 4.5rem;
+    margin-top: 3rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-note{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.welcome-note h1{
+    font-size: 48px;
+    color: #294a70;
+}
+
+.welcome-note div{
+    font-size: 19px;
+    text-align: justify;
+}
+
+.mascot{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mascot img{
+    height: 400px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .hero{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .slider{
+        width: 1500px;
+    }
+
+    .list img{
+        width: 1500px;
+    }
+
+    .welcome{
+        margin-top: 3rem;
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 99vw;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-note{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .welcome-note h1{
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .welcome-note div{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .mascot img{
+        width: 450px;
+    }
+}

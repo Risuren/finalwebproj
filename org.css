@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.org{
+    background-image: url(img/FB_IMG_1746077019403.jpg);
+}
+
+/* DESKTOP */
+@media screen and (min-width:1150px) {
+
+    .org{
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cover{
+        width: 100%;
+        height: 100%;
+        background-color: #000000c5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        font-family: Volkhov;
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    .cover div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        margin-top: 0px;
+    }
+    .cover span{
+        margin-top: 12%;
+        font-size: 1.5rem;
+        font-family: Inter;
+        font-weight: 500;
+    }
+
+
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-container{
+        width: 92%;
+        height: 400px;
+        border-radius: 1.5rem;
+        display: flex;
+        gap: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+
+    .img-container{
+        flex: 1;
+        margin: 20px;
+        border-radius: .5rem;
+    }
+
+    .info-container{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding: 60px 20px;
+        background-color: #294a70;
+        border-radius: 0 1.5rem 1.5rem 0;
+        color: #fff;
+    }
+
+    .position{
+        flex: 1;
+        font-family: "Inter";
+        font-size: 28px;
+    }
+
+    .name{
+        flex: 2;
+        font-family: 'Volkhov';
+        font-size: 52px;
+    }
+
+    .description{
+        flex: 5;
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width:1150px) {
+    .org{
+        width: 92%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-self: center;
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .cover{
+        width: 100%;
+        height: 100%;
+        background-color: #000000a4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        display: flex;
+        text-align: center;
+        text-wrap: wrap;
+    }
+
+    .cover div{
+        font-family: Volkhov;
+        font-weight: 600;
+        font-size: 3.5em;
+        color: #e6f1ff;
+        text-align: center;
+    }
+
+    .cover div span{
+        font-size: 1.5rem;
+        font-family: Inter;
+        font-weight: 500;
+    }
+
+
+
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container{
+        width: 92%;
+        height: max-content;
+        padding-bottom: 20px;
+        justify-self: center;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #294a70;
+        color: #fff;
+        gap: 10px;
+    }
+
+    .img-container{
+        height: 100%;
+        width: 92%;
+        justify-self: center;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .info-container{
+        flex: 1;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 30px;
+        justify-content: center;
+        height: max-content;
+    }
+
+    .position{
+        
+        height: max-content;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Inter";
+        background-color: #2986fe;
+        margin-top: 20px;
+    }
+
+    .name{
+        
+        height: max-content;
+        font-size: 42px;
+        font-family: "Volkhov";
+    }
+
+    .description{
+        
+        height: max-content;
+        font-size: 16px;
+    }
+
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cont-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1150px) {
+    .main-cont{
+        width: 100%;
+        height: 90vh;
+        background-color: #e3e4e4;
+        display: flex;
+    }
+    
+    .contact-text-container{
+        width: 50%;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-text{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        
+        color: #1e1f1f;
+    }
+    
+    .contact-text h1{
+        font-family: 'Volkhov';
+        font-weight: 400;
+        font-size: 4rem;
+    }
+    
+    .contact-sideimg{
+        width: 50%;
+        height: 100%;
+        background-color: darkgrey;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .main-cont{
+        width: 100%;
+        height: 75vh;
+        background-color: #e3e4e4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-text-container{
+        width: 100%;
+        height: 40%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-text{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        color: #1e1f1f;
+    }
+
+    .contact-text h1{
+        font-family: 'Volkhov';
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    .contact-text div{
+        font-size: 18px;
+    }
+
+    .contact-sideimg{
+        width: 100%;
+        height: 60%;
+        background-color: darkgrey;
+    }
+    
+}
+
+
+.tables{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    width: 92%;
+    border-collapse: collapse;
+    color: #454a70;
+}
+
+caption{
+    font-family: Volkhov;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+tr, th,td{
+    height: 100px;
+    border: 1px solid #a1a1a1;
+    text-align: center;
+}

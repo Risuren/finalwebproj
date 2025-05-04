@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+a{
+    color: #2986fe;
+    font-family: 'Open Sans';
+    font-size: 22px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-container{
+    box-shadow: rgba(0, 0, 0, 0.425) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.5) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+@media screen and (min-width: 1150px) {
+    .banner{
+        width: 100%;
+        height: 90vh;
+        background-color: #e3e4e4;
+        display: flex;
+    }
+    
+    .banner-container{
+        width: 50%;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner-text{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        
+        color: #1e1f1f;
+    }
+    
+    .banner-text h1{
+        font-family: 'Volkhov';
+        font-weight: 400;
+        font-size: 5rem;
+    }
+
+    .banner-text div{
+        font-size: 20px;
+    }
+    
+    .sideimg{
+        width: 50%;
+        height: 100%;
+        background-color: darkgrey;
+    }
+
+
+
+    .colleges{
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container{
+        width: 92%;
+        background-color: whitesmoke;
+        display: flex;
+        color: #1e1f1f;
+        
+    }
+
+    .info-cont{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px 100px;
+    }
+
+    .dept{
+        flex: 3;
+        font-family: Volkhov;
+        font-weight: 400;
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .col-links{
+        width: 80%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: end;
+        margin-bottom: 30px;
+    }
+
+    .wrapper{
+        flex: 1;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .prog-btn{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        background-color: #2986fe;
+        color: whitesmoke;
+        font-family: Inter;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        transition: all 0.5s ease-in-out; 
+    }
+
+    .prog-btn:hover{
+        color: #1e1f1f;
+        transition: all 0.5s ease-in-out;
+        background-color: #a1a1a1;
+    }
+
+    .modal{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(77, 77, 77, 0.7);
+        transition: all 0.4s;
+        visibility: hidden;
+        opacity: 0;
+        margin-top: 80px;
+    }
+
+    .modal:target{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .modal-content{
+        position: relative;
+        background-color: #fff;
+        width: 80%;
+        max-width: 90%;
+        padding: 1em 2em;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .modalclose{
+        position: absolute;
+        top: 0;
+        right: 15px;
+        color: #585858;
+        text-decoration: none;
+        font-size: 36px;
+    }
+
+    .img-cont{
+        flex: 1.8;
+        background-color: black;
+        height: 600px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .banner{
+        width: 100%;
+        height: 75vh;
+        background-color: #e3e4e4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-container{
+        width: 100%;
+        height: 40%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        color: #1e1f1f;
+    }
+
+    .banner-text h1{
+        font-family: 'Volkhov';
+        font-weight: 400;
+        font-size: 3.3rem;
+    }
+
+    .banner-text div{
+        font-size: 18px;
+    }
+
+    .sideimg{
+        width: 100%;
+        height: 60%;
+        background-color: darkgrey;
+    }
+    
+
+
+    .colleges{
+        width: 100%;
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container{
+        width: 92%;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        color: #1e1f1f;
+    }
+
+    .info-cont{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 25px;
+    }
+
+    .dept{
+        font-family: Volkhov;
+        font-weight: 400;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .col-links{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: end;
+        margin-bottom: 30px;
+        gap: 5px;
+    }
+
+    .wrapper{
+        flex: 1;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+
+    .prog-btn{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        background-color: #2986fe;
+        color: whitesmoke;
+        font-family: Inter;
+        border-radius: .25rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        transition: all 0.5s ease-in-out; 
+    }
+
+    .prog-btn:hover{
+        color: #1e1f1f;
+        transition: all 0.5s ease-in-out;
+        background-color: #a1a1a1;
+    }
+
+    .modal{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(77, 77, 77, 0.7);
+        transition: all 0.4s;
+        visibility: hidden;
+        opacity: 0;
+        margin-top: 80px;
+    }
+
+    .modal:target{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .modal-content{
+        position: relative;
+        background-color: #fff;
+        width: 80%;
+        max-width: 90%;
+        padding: 1em 2em;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .modalclose{
+        position: absolute;
+        top: 0;
+        right: 15px;
+        color: #585858;
+        text-decoration: none;
+        font-size: 36px;
+    }
+
+    .img-cont{
+        width: 100%;
+        height: 400px;
+        background-color: black;
+    }
+}
